@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sashahi\\Downloads\\ctrlspec (3)\\ctrlspec\\ctrlspec.csproj": {}
+    "C:\\Users\\sashahi\\source\\repos\\Migration\\ctrlspec\\ctrlspec.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sashahi\\Downloads\\ctrlspec (3)\\ctrlspec\\ctrlspec.csproj": {
+    "C:\\Users\\sashahi\\source\\repos\\Migration\\ctrlspec\\ctrlspec.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sashahi\\Downloads\\ctrlspec (3)\\ctrlspec\\ctrlspec.csproj",
+        "projectUniqueName": "C:\\Users\\sashahi\\source\\repos\\Migration\\ctrlspec\\ctrlspec.csproj",
         "projectName": "ctrlspec",
-        "projectPath": "C:\\Users\\sashahi\\Downloads\\ctrlspec (3)\\ctrlspec\\ctrlspec.csproj",
+        "projectPath": "C:\\Users\\sashahi\\source\\repos\\Migration\\ctrlspec\\ctrlspec.csproj",
         "packagesPath": "C:\\Users\\sashahi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sashahi\\Downloads\\ctrlspec (3)\\ctrlspec\\obj\\",
+        "outputPath": "C:\\Users\\sashahi\\source\\repos\\Migration\\ctrlspec\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sashahi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -92,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.105\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.107\\RuntimeIdentifierGraph.json"
         }
       }
     }

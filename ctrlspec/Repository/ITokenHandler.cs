@@ -9,5 +9,6 @@ namespace ctrlspec.Repository
     public interface ITokenHandler
     {
          Task<string> CreateTokenAsync(Login loginTable);
+          Task<string> GeneratePasswordTokenAsync(Login users);
     }
 }

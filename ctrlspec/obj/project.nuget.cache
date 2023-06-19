@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LXvZ7AoqnTLUknRfvn/1fES6TLfj99+pahY/NXqRfYrLQ26uFDjP2Aq19xSrQW4OuwDPGIeMevmklw3t1F8b8w==",
+  "dgSpecHash": "hps14UdzNehf3E2FdI9L+SzCD5zWGYNHQOfr/hno6Al1bbWnFuScHpSpTLD5f4DU5sxPx8k5TD+DTPoCDo3EkQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sashahi\\Downloads\\ctrlspec (3)\\ctrlspec\\ctrlspec.csproj",
+  "projectFilePath": "C:\\Users\\sashahi\\source\\repos\\Migration\\ctrlspec\\ctrlspec.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sashahi\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\sashahi\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

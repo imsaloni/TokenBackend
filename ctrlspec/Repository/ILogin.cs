@@ -9,9 +9,12 @@ namespace ctrlspec.Repository.ILogin
     public interface ILogin
     {
         Task<Login> SignUp(Login loginTable);
-        Task<Login> Login(string emailId, string Password);
+        Task<Login> Login(string emailId, string Password, string Role);
 
-      
+         Task<List<Login>> GetAll();
+        Task<Login> GetByID(int Id);
+
+         Task Delete(int Id);
 
     }
 }

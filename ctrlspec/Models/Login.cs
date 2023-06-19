@@ -9,12 +9,13 @@ namespace ctrlspec.Models
     public class Login
     {
         [Key]
-        public double LoginId{get;set;}
+        public int LoginId{get;set;}
         public string Name{get;set;}
 
         public string EmailId{get;set;}
 
         public string Password{get;set;}
+         public string Role{get;set;}
 
     }
 }

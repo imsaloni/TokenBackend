@@ -27,6 +27,8 @@ builder.Services.AddDbContext<CtrlSpecDbContext>(options => options.UseSqlServer
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 
 builder.Services.AddScoped<ILogin, LoginRepository>();
+builder.Services.AddScoped<IClient, ClientRepository>();
+builder.Services.AddScoped<IAdmin, AdminRepository>();
 builder.Services.AddScoped<ITokenHandler, ctrlspec.Repository.TokenHandler>();
 
 

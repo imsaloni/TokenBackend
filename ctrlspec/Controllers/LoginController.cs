@@ -82,22 +82,21 @@ namespace ctrlspec.Controllers
             try
             {
                 if 
-                (LoginDTO.EmailId == null && LoginDTO.Password == null )
+                (LoginDTO.EmailId == null && LoginDTO.Password == null && LoginDTO.Role == null)
                 {
                     return NotFound("EmailId or password is null");
                 
                 }
                 //we check if user is authenticated which is check the username and password is present 
                 // in our database.
-                var user = await _Login.Login(LoginDTO.EmailId, LoginDTO.Password);
+                var user = await _Login.Login(LoginDTO.EmailId, LoginDTO.Password,LoginDTO.Role);
                 if (user != null)
                 {
                     var token = handler.CreateTokenAsync(user);
                     return Ok(token);
                 }
                 
-                
-                  return BadRequest("Emailid or password is incorrect ");
+                return BadRequest("Emailid or password or Role is incorrect ");
           
 
             }

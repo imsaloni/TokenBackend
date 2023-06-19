@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ctrlspec.Data;
 
@@ -10,9 +11,11 @@ using ctrlspec.Data;
 namespace ctrlspec.Migrations
 {
     [DbContext(typeof(CtrlSpecDbContext))]
-    partial class CtrlSpecDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230616034422_Initial.3")]
+    partial class Initial3
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

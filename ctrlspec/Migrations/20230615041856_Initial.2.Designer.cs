@@ -11,8 +11,8 @@ using ctrlspec.Data;
 namespace ctrlspec.Migrations
 {
     [DbContext(typeof(CtrlSpecDbContext))]
-    [Migration("20230614040044_Initial")]
-    partial class Initial
+    [Migration("20230615041856_Initial.2")]
+    partial class Initial2
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -26,8 +26,11 @@ namespace ctrlspec.Migrations
 
             modelBuilder.Entity("ctrlspec.Models.Login", b =>
                 {
-                    b.Property<double>("LoginId")
-                        .HasColumnType("float");
+                    b.Property<int>("LoginId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("LoginId"));
 
                     b.Property<string>("EmailId")
                         .IsRequired()
@@ -38,6 +41,10 @@ namespace ctrlspec.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Role")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

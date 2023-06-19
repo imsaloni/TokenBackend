@@ -11,7 +11,7 @@ namespace ctrlspec.Data
         }
         public DbSet<Login> login { get; set; }
     
-        //public DbSet<Login> login { get; set; }
+        public DbSet<Application> Applications { get; set; }
 
     }
 }
