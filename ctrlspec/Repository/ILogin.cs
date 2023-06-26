@@ -14,7 +14,7 @@ namespace ctrlspec.Repository.ILogin
          Task<List<Login>> GetAll();
         Task<Login> GetByID(int Id);
 
-         Task Delete(int Id);
+         Task Delete(int loginId);
 
     }
 }

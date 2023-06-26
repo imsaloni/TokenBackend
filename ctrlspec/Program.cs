@@ -9,9 +9,11 @@ using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using ctrlspec.Repository.ILogin;
 using ctrlspec.Repos;
+using ctrlspec.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
+//add services for D3.js
 
 
 
@@ -30,6 +32,7 @@ builder.Services.AddScoped<ILogin, LoginRepository>();
 builder.Services.AddScoped<IClient, ClientRepository>();
 builder.Services.AddScoped<IAdmin, AdminRepository>();
 builder.Services.AddScoped<ITokenHandler, ctrlspec.Repository.TokenHandler>();
+builder.Services.AddScoped<ApplicationService>();
 
 
 //builder.Services.AddAutoMapper(typeof(Program).Assembly);

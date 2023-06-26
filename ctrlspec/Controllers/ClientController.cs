@@ -72,11 +72,11 @@ namespace ctrlspec.Controllers
             return Ok(app);
         }
         [HttpPost]
-        public async Task<ActionResult<Application>> Add(Application application)
+        public async Task<ActionResult<Application>> AddApplications(Application application)
         {
 
 
-            var add = await _context.Add(application);
+            var add = await _context.AddApplications(application);
            
             if(application == null)
             {
